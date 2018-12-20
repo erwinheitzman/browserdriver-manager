@@ -1,7 +1,7 @@
 {
   "name": "browserdriver-manager",
   "version": "0.0.1",
-  "description": "browserdriver manager is a npm package that automatically fetches the latest version of the ChromeDriver and GeckoDriver for you",
+  "description": "Manager for the ChromeDriver and GeckoDriver",
   "author": {
     "name": "Erwin Heitzman",
     "email": "erwin.heitzman@gmail.com"
