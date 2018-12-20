@@ -1,0 +1,8 @@
+# Logs
+*.log
+
+# Typescript output dir
+dist
+
+# Dependencies
+node_modules/

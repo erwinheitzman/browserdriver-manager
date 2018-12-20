@@ -1,0 +1,32 @@
+{
+  "name": "browserdriver-manager",
+  "version": "0.0.1",
+  "description": "browserdriver manager is a npm package that automatically fetches the latest version of the ChromeDriver and GeckoDriver for you",
+  "author": {
+    "name": "Erwin Heitzman",
+    "email": "erwin.heitzman@gmail.com"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "precompile": "rm -rf dist",
+    "compile": "tsc",
+    "lint": "tslint -p tslint.json"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/ng-apimock/core/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "node-fetch": "2.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "10.12.18",
+    "@types/node-fetch": "2.1.4",
+    "fs-extra": "7.0.1",
+    "ts-lint": "4.5.1",
+    "ts-node": "7.0.1",
+    "typescript": "3.2.2"
+  }
+}
