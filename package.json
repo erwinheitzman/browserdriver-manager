@@ -2,22 +2,21 @@
   "name": "browserdriver-manager",
   "version": "0.0.1",
   "description": "Manager for the ChromeDriver and GeckoDriver",
-  "author": {
-    "name": "Erwin Heitzman",
-    "email": "erwin.heitzman@gmail.com"
-  },
+  "author": "Erwin Heitzman",
+  "files": [
+    "dist/**/*"
+  ],
+  "types": "dist/**/*.d.ts",
   "main": "dist/index.js",
   "scripts": {
-    "precompile": "rm -rf dist",
-    "compile": "tsc",
-    "lint": "tslint -p tslint.json"
+    "build": "rm -rf dist && tsc",
+    "lint": "tslint -p tslint.json src/**/*.ts",
+    "prepare": "npm run build",
+    "preversion": "npm run lint",
+    "prepublishOnly": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/ng-apimock/core/blob/master/LICENSE-MIT"
-    }
-  ],
   "dependencies": {
     "node-fetch": "2.3.0"
   },
