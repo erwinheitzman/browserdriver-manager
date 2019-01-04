@@ -6,3 +6,6 @@ dist
 
 # Dependencies
 node_modules/
+
+# OSX metadata
+.DS_Store
