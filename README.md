@@ -16,7 +16,7 @@ const browserdriverManager = require('browserdriver-manager');
 import * as browserdriverManager from 'browserdriver-manager';
 ```
 
-Or import just the driver that you need with this line of code:
+Or import only the driver that you need with this line of code:
 
 ```javascript
 // javascript
