@@ -6,7 +6,7 @@
     "allowJs": false,
     "checkJs": false,
     "declaration": true,
-    "outDir": "./dist",
+    "outDir": "dist",
     "strict": true,
     "typeRoots": ["node_modules/@types"],
     "esModuleInterop": true
